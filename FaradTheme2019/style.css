@@ -1,0 +1,374 @@
+﻿/**
+
+Theme Name: FaradTheme2019_1.7
+
+Theme Description: Developed by David Fu
+
+*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: gray;
+	text-decoration: none;
+}
+
+a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.navbar-brand{
+    padding-left:8.3333% !important;
+}
+
+
+/*Fun animation*/
+.fly-in-text {
+	list-style: none;
+	position: absolute;
+	left: 47%;
+	top: 40%; /* Not mobile phone friendly*/
+	transform: translateX(-50%) translateY(-50%);
+}
+.fly-in-text li {
+	display: inline-block;
+	color: #eb7125!important;
+	font-family: Open Sans, Arial;
+	font-weight: 300;
+	margin-right: 5px;
+	font-size: 6em;
+	opacity: 1;
+	transition: all 2s ease;
+}
+
+.animate-from-right {
+	position: absolute;
+	left: 34%;
+	top: 44%;
+	/*transform: translateX(-50%);*/
+	color: #eb7125!important;
+	font-family: Open Sans, Arial;
+	font-weight: 300;
+	margin-right: 5px;
+	font-size: 2em;
+	opacity: 1;
+	transition: all 0.75s ease;
+}
+.animate-from-right.hide-r {
+	transform: translateX(-1000px);
+	opacity: 0;
+}
+
+.small {
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;/* Not mobile phone friendly*/
+	transform: translateX(-50%) translateY(-50%);
+	opacity: 0;
+}
+/*.fly-in-text li:last-child {
+	margin-right: 0;
+}*/
+
+.logoHover:hover {
+	filter: opacity(0.5);
+}
+
+.fly-in-text.hidden li {
+	opacity: 0;
+}
+nth-child
+
+.fly-in-text.hidden li:nth-child(1) { transform: translateX(-1000px) translateY(-2000px); }
+.fly-in-text.hidden li:nth-child(2) { transform: translateX(-20px) translateY(-100px); }
+.fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-60px); }
+.fly-in-text.hidden li:nth-child(5) { transform: translateX(300px) translateY(-20px); }
+.fly-in-text.hidden li:nth-child(6) { transform: translateX(-300px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(7) { transform: translateX(20px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(8) { transform: translateX(220px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(9) { transform: translateX(-320px) translateY(200px); }
+.fly-in-text.hidden li:nth-child(10) { transform: translateX(400px) translateY(200px); }
+
+
+span {
+
+	font-family: Serif; 
+}
+
+.starter-template {
+	
+	padding: 3rem 1.5rem;
+	text-align: center;
+}
+
+.sled {
+	filter: brightness(70%) blur(5px); /* contrast(2);/* grayscale(10%);*/
+    /*background: radial-gradient(#fceabb, #f8b500);*/
+}
+
+
+#hero {
+	/*background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("http://localhost/wordpress/wp-content/themes/FaradTheme2019-2/img/massa1.jpg") no-repeat center center fixed;*/
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-size: cover!important;
+}
+
+.h-text {
+	padding: 20% 2%;
+}
+
+
+.bg-dar {
+	transition: 600ms ease;
+	background-color: transparent!important;
+}
+
+.bg-dar.scrolled {
+	background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.anim {
+	opacity: 1;
+	transition: all 0.75s ease;
+}
+
+.anim.hid {
+	opacity: 0;
+	transform: translateX(-100px);
+}
+
+/* Fix wordpress bug */
+img { 
+	max-width:100% !important;
+	max-height:100% !important;
+}
+
+
+/* Custom Bootstrap nav-color*/
+	.navbar-custom {
+
+	    color: #eb7125!important;
+	    /*font-family: Open Sans, Arial;*/
+	    font-weight: : bold;
+	    font-size: 20px;
+	    /*letter-spacing: 3px;*/
+	    /*transform: scaleY(1.05);*/
+	}
+	/* change the brand and text color */
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-text {
+	    color: #fb8135!important;
+	    /*font-family: Open Sans, Arial;*/
+	    font-size: 20px;
+	    font-weight: : bold;
+	    /*letter-spacing: 3px;*/
+	    /*transform: scaleY(1.05);*/
+	}
+	/* change the link color */
+	.navbar-custom .navbar-nav .nav-link {
+	    color: #fc8236!important;
+	    font-weight: : bold;
+	    /*font-family: Open Sans, Arial;*/
+	    font-size: 20px;
+	    /*letter-spacing: 3px;*/
+	    /*transform: scaleY(1.05);*/
+	}
+	/* change the color of active or hovered links */
+	.navbar-custom .nav-item.active .nav-link {
+	    color: #fc8236!important;
+	    font-weight: : bold;
+	    /*font-family: Open Sans, Arial;*/
+	    font-size: 20px;
+	    /*letter-spacing: 3px;*/
+	    /*transform: scaleY(1.05);*/
+
+	}
+	.navbar-custom .nav-item:hover .nav-link {
+	    color:  white!important;
+	    font-weight: : bold;
+	    /*font-family: Open Sans, Arial;*/
+	    font-size: 20px;
+	    /*letter-spacing: 3px;*/
+	    /*transform: scaleY(1.05);*/
+	}
+	.navbar-nav > li{
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+
+
+	/* for dropdowns only */
+	.navbar-custom .navbar-nav .dropdown-menu  { 
+	  background-color: #33aa33;
+	}
+	.navbar-custom .navbar-nav .dropdown-menu>li>a  { 
+	  color: #fff;
+	}
+	.navbar-custom .navbar-nav .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .dropdown-menu>li>a:focus  { 
+	  color: #33aa33;
+}
+
+/* Content management */
+	.padding {
+		padding: 60px 10px; /* up down 80 pixel */
+	}
+
+	.padding img {
+		/*width: 100%;*/
+	}
+
+	.my-text {
+		padding: 30px;
+		margin:auto;
+	}
+
+.pic {
+	transition: 300ms linear;
+	transform: translateX(-400px);
+	opacity: 0;
+}
+.pic.scrolled1 {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+
+#fixed {
+	/*background: url('http://localhost/wordpress/wp-content/themes/FaradTheme2019-2/img/massa.jpg') no-repeat center center fixed;*/
+	display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+#page {
+	padding-top: 5%;
+	padding: 5%;
+	width: 80%; 
+	margin:auto;
+}
+
+#page img {
+	height: auto;
+	max-width: 100%;
+}
+
+@media (max-width:  1000px) {
+
+
+	.fly-in-text li {
+		display: inline-block;
+		color: #eb7125!important;
+		font-family: Open Sans, Arial;
+		font-weight: 300;
+		margin-right: 1px;
+		font-size: 2em;
+		opacity: 1;
+		transition: all 2.5s 
+	}
+
+	.animate-from-right {
+		opacity: 1;
+		font-size: 1em;
+	}
+
+	.small {
+		display: inline-block;
+		color: #eb7125!important;
+		font-family: Open Sans, Arial;
+		font-weight: 300;
+		margin-right: 1px;
+		font-size: 3em;
+		opacity: 1;
+		transition: all 2.5s ease;
+	}
+	.bg-dar {
+		background-color: rgba(0, 0, 0, 0.3)!important;
+	}
+
+	#page {
+		padding: 2px!important;
+		width: 90%; 
+	}
+} 	
+
+/* För företag CSS */
+
+/* Unit box size */
+.pic1 {
+	/*height: 30vh !important;*/
+}
+
+.compButton {
+	background-color: lighter;
+	margin-top: 5vh;
+	height: 15vh;
+}
+
+.compButton:hover {
+	filter: opacity(0.5);
+}
+
+.panel-body p {
+	/*background-color: #fc8236;*/
+}
+
+
+/*Edge - works to 41.16299.402.0
+@supports (-ms-ime-align:auto) 
+{
+    html{
+        overflow: hidden;
+        height: 100%;      
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+        position: relative;
+    }
+}*/
+
+/*Ie 10/11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+{
+    html{
+        overflow: hidden;
+        height: 100%;    
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+}*/
+
+
+/* Fix lagging effect 
+.be-fixed {
+    position: fixed;
+    z-index: 9990;*/
+    /* MAGIC HAPPENS HERE
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);*/
+}
